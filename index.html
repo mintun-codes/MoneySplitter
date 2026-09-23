@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1>MoneySplitter</h1>
+    </header>
+    <main>
+        <section class="Total">
+            <h2>Total</h2>
+            <div class="text-container">
+                <label for="total-money">Total money:</label>
+                <input id="total-money" type="number">
+                <label for="total-people">Total number of people:</label>
+                <input id="total-people" type="number">
+            </div>
+        </section>
+        <section class="Participant-section">
+            <h2>Participants</h2>
+            <div class="person-detail text-container">
+                <label for="person-name">Participant name:</label>
+                <input id="person-name" type="text">
+                <label for="amount-paid">Amount paid:</label>
+                <input id="amount-paid" type="number">
+            </div>
+            <button>Calculate split</button>
+        </section>
+        <section class="split-result">
+            <h2>Money to split</h2>
+            <div class="result-header"><span>Participant name</span>
+                <span>Amount payable</span>
+            </div>
+            <div class="result-row">
+                <span>John</span>
+                <span>₹500</span>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
