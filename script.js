@@ -5,8 +5,10 @@ peopleInput.addEventListener("input", () => {
     totalPeople(Number(peopleInput.value));
 });
 
-function totalPeople(peopleInput) {
-    for (let i = 1; i < peopleInput; i++) {
+function totalPeople(numberOfPeople) {
+    const deleteGeneratedPerson = document.querySelectorAll(".generated-person");
+    deleteGeneratedPerson.forEach((person) => person.remove());
+    for (let i = 1; i < numberOfPeople; i++) {
         const peopleNameDiv = document.createElement("div");
         const nameLabel = document.createElement("label");
         const nameInput = document.createElement("input");
@@ -25,7 +27,7 @@ function totalPeople(peopleInput) {
 
         peopleNameDiv.classList.add("person-detail");
         peopleNameDiv.classList.add("text-container");
+        peopleNameDiv.classList.add("generated-person");
 
     }
 }
-totalPeople(peopleInput);
