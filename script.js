@@ -47,7 +47,7 @@ function participantDetails() {
     const moneyInputs = document.querySelectorAll(".participant-money");
 
     if (
-        peopleInput.value === "" || Number(peopleInput.value) <= 0 || moneyPaidTotal.value === "" || Number(moneyPaidTotal.value) < 0
+        peopleInput.value === "" || Number(peopleInput.value) <= 0 || moneyPaidTotal.value === "" || Number(moneyPaidTotal.value) <= 0
     ) {
         alert("Please enter valid Total money and Total people.");
         return;
